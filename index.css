@@ -1,0 +1,23 @@
+#wineTable
+{
+    border: 2px solid black;
+    width: 700px;
+    padding: 5px;
+    text-align: center;
+}
+
+#addWineForm
+{
+    padding: 5px;
+}
+
+#wineTable, #addWineForm
+{
+   margin-left: 400px;
+}
+
+#title, #cardAdd
+{
+    margin-left: 600px;
+}
+

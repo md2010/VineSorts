@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script type="text/javascript" src="index.js"></script>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+        
+    <body>
+        <h1 id="title"> ADD NEW WINE SORT </h1>  
+
+        <form id="addWineForm" onsubmit="retrieveData(event)">
+            <label for="color">Choose wine color:</label><br>
+            <input type="radio" id="white" value="White" name="color"> White <br>
+            <input type="radio" id="rose" value="Rose" name="color"> Rose <br>
+            <input type="radio" id="red" value="Red" name="color"> Red <br>
+            <label for="type">Type of Wine:</label><br>
+            <input type="text" id="type" name="type">
+            <input type="submit" value="Submit">
+        </form>
+
+    </body>
+</html>

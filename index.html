@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script type="text/javascript" src="index.js"></script>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+        
+    <body>
+        <h1 id="title"> WINE SORTS </h1>       
+
+        <table id="wineTable" class="table">
+
+            <thead class="thead-dark"> 
+                <tr>
+                <th>Color</th>
+                <th>Type</th> 
+                <th>Delete</th>               
+                </tr>
+            </thead>
+           
+         </table>
+
+         <script type="text/javascript"> refreshTable(); </script>
+
+        
+        <div class="col-sm-6">
+            <div class="card" style="width: 18rem;" id="cardAdd">
+                <div class="card-body">
+                <p class="card-text">Above are some sorts of wine in the table. If you want to add a new one, click on the button Add.</p>
+                <button type="button" class="btn btn-outline-primary" onclick="openForm()">Add</button>
+                </div>
+            </div>
+        </div>
+    
+
+    </body>
+
+</html>
