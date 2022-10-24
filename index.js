@@ -33,13 +33,14 @@ function saveToLocalStorage(obj)
     } 
    
     window.localStorage.setItem(i, JSON.stringify(obj));
+    window.location.href = "http://127.0.0.1:5500/index.html";
 }
 
 
 function refreshTable()
 {
-    const tableRef = document.getElementById('wineTable');
-    for(let i = 1; i < localStorage.length; i++)
+    const tableRef = document.getElementById('tbody');
+    for(let i = 0; i < localStorage.length; i++)
     {
         let obj =localStorage.getItem(i);
         if(obj === null)
@@ -71,8 +72,9 @@ function refreshTable()
 function deleteRow(i)
 {
     localStorage.removeItem(i);
-    const tableRef = document.getElementById('wineTable');
+    const tableRef = document.getElementById('tbody');
     tableRef.innerHTML = "";
     refreshTable();
 }
+
 
